@@ -8,7 +8,8 @@
 
 \begin{document}
 
-\title{Replace This Text with the Article Title}
+\title{Data-Intensive Methods in [Experiment or Observatory]:
+A Review of [Physics Measurement]}
 
 \author{Author Name$^{1}$, Author Name$^{2}$ and Author Name$^{1,2}$}
 
@@ -18,176 +19,100 @@
 \email{author@institution.org}
 
 \begin{abstract}
-Briefly introduce the research problem, the aim of the study, the
-method used, the main results, and the principal conclusion.
-Replace this text with your abstract.
+Briefly describe the physics question, methods, main result,
+and conclusion of your review.
 \end{abstract}
 
-\section{Introduction}
-\label{sec:introduction}
-
-Introduce the topic and provide the background needed to understand
-the study. Cite relevant work where appropriate~\cite{example2024}.
-
-\subsection{Background}
-\label{subsec:background}
-
-Describe the current state of knowledge and define any important
-terms or concepts.
-
-\subsection{Research problem and objectives}
-\label{subsec:objectives}
-
-State the problem addressed by the article and identify the main
-research objectives or questions.
-
 \section{Motivation}
-\label{sec:motivation}
 
-Explain why the problem is important and who may benefit from
-addressing it.
-
-\subsection{Research gap}
-\label{subsec:gap}
-
-Identify limitations or unanswered questions in existing work.
-
-\subsection{Contributions}
-\label{subsec:contributions}
-
-Summarise the main contributions of this article:
-
-\begin{itemize}
-    \item First contribution.
-    \item Second contribution.
-    \item Third contribution.
-\end{itemize}
+\subsection{Physics question and significance}
+What does the experiment measure? Explain the hypothesis
+being tested and why the measurement matters~\cite{paper}.
 
 \section{Method}
-\label{sec:method}
 
-Describe the approach used to address the research problem.
+\subsection{Experimental setup}
+Describe the apparatus and its main components.
+Explain how it detects the physical signal.
 
-\subsection{Study design}
-\label{subsec:design}
+\begin{figure}[htbp]
+    \centering
+    % Replace the box with the image command below when ready.
+    \fbox{\parbox[c][4cm][c]{0.8\linewidth}{
+        \centering Labelled detector or apparatus diagram
+    }}
+    % \includegraphics[width=0.8\linewidth]{detector.png}
+    \caption{Describe the apparatus. Add the image source
+    and attribution here~\cite{paper}.}
+    \label{fig:detector}
+\end{figure}
 
-Explain the overall design, assumptions, and scope of the study.
+\subsection{Data acquisition and processing}
+Describe the journey from raw data to the final dataset.
+Include numerical values and references for:
+\begin{itemize}
+    \item Raw event rate or data streaming rate.
+    \item Trigger or filtering stages and their input/output rates.
+    \item Stored data rate and annual or total recorded volume.
+    \item Offline processing, computing system, and total storage.
+    \item Simulation steps and their cost relative to data processing.
+\end{itemize}
 
-\subsection{Materials and data}
-\label{subsec:data}
-
-Describe the materials, data sources, participants, or equipment
-used, as appropriate.
-
-\subsection{Procedure and analysis}
-\label{subsec:analysis}
-
-Explain the procedure and how the data were analysed. Include
-enough detail for another researcher to understand and, where
-possible, reproduce the work.
+\subsection{Data analysis}
+Explain data selection, key observables, background or noise
+estimation, and signal extraction. Describe any machine learning
+or other computational techniques used.
 
 An example equation is
 \begin{equation}
     y = mx + c,
     \label{eq:example}
 \end{equation}
-where \(m\) is the slope and \(c\) is the intercept. Refer to it
-in the text as equation~\eqref{eq:example}.
+where \(m\) is the slope and \(c\) is the intercept.
+Replace equation~\eqref{eq:example} with a relevant equation.
+
+\subsection{Systematic uncertainties}
+Identify the main uncertainties and explain how they are
+evaluated and included in the analysis.
 
 \section{Results}
-\label{sec:results}
 
-Present the findings clearly and in a logical order.
+\subsection{Statistical method}
+Describe the statistical framework and test statistic.
+Explain how uncertainties, significance, or limits are obtained.
 
-\subsection{Example figure}
-
-Figure~\ref{fig:example} shows a placeholder for an image.
+\subsection{Main result}
+Report the main result with its statistical and systematic
+uncertainties, where available. Explain the key features of
+figure~\ref{fig:result}.
 
 \begin{figure}[htbp]
     \centering
-
-    % Placeholder box: replace with \includegraphics when ready.
-    \fbox{\parbox[c][5cm][c]{0.8\linewidth}{%
-        \centering Your figure goes here
+    % Replace the box with the image command below when ready.
+    \fbox{\parbox[c][4cm][c]{0.8\linewidth}{
+        \centering Key result figure from the publication
     }}
-
-    \caption{Example figure. Replace this caption with a description.}
-    \label{fig:example}
+    % \includegraphics[width=0.8\linewidth]{result.png}
+    \caption{Describe the result. Add the publication,
+    original figure number, and attribution here~\cite{paper}.}
+    \label{fig:result}
 \end{figure}
 
-\subsection{Main findings}
-\label{subsec:findings}
-
-Describe the main results and refer to relevant tables and figures.
-Table~\ref{tab:example} shows an example format.
-
-\begin{table}[htbp]
-    \centering
-    \caption{Example results table. Replace the values with your own.}
-    \label{tab:example}
-    \begin{tabular}{lcc}
-        \toprule
-        Method & Metric 1 & Metric 2 \\
-        \midrule
-        Baseline & 0.00 & 0.00 \\
-        Proposed & 0.00 & 0.00 \\
-        \bottomrule
-    \end{tabular}
-\end{table}
-
-% Uncomment this block after adding your figure file to the project.
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[width=0.8\linewidth]{example-figure}
-%     \caption{Describe the figure here.}
-%     \label{fig:example}
-% \end{figure}
-
-\subsection{Comparison with existing work}
-\label{subsec:comparison}
-
-Compare the findings with a relevant baseline or previous studies.
-Explain any meaningful similarities and differences.
-
-\section{Critique and Discussion}
-\label{sec:critique}
-
-Interpret the results in relation to the research objectives and
-the existing literature.
-
-\subsection{Strengths and implications}
-\label{subsec:strengths}
-
-Discuss the strengths of the approach and the implications of the
-findings.
-
-\subsection{Limitations}
-\label{subsec:limitations}
-
-Critically evaluate limitations, assumptions, potential sources of
-bias, and factors that may affect the validity or generalisability
-of the results.
-
-\subsection{Future work}
-\label{subsec:future-work}
-
-Suggest specific ways to address the limitations or extend the study.
+\subsection{Discussion and critique}
+Explain what the result means. Discuss the strengths,
+limitations, and role of data-intensive methods.
 
 \section{Conclusion}
-\label{sec:conclusion}
+Summarise the physics finding and how data-intensive methods
+made the measurement possible. Suggest one future improvement.
 
-Summarise the research problem, approach, principal findings, and
-contribution. Avoid introducing new results in this section.
+\section*{Author Contributions}
+All authors contributed equally to the literature review,
+writing, and revision of this manuscript.
+All authors read and approved the final manuscript.
 
-% Optional: include if applicable.
-% \section*{Acknowledgments}
-% Acknowledge funding, institutional support, and other contributions.
-
-\section*{Author Contributions and Acknowledgments}
-
-All authors contributed equally to the preparation of this
-manuscript, including the review and revision process. All authors
-read and approved the final manuscript.
+\section*{Acknowledgments}
+Acknowledge any assistance or support, or remove this section.
 
 \bibliographystyle{unsrt}
 \bibliography{references}
